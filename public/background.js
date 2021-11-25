@@ -1,0 +1,1 @@
+(()=>{"use strict";setInterval((()=>{const e=new Date;e.getMinutes(),e.getSeconds()}),2e3)})();
