@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Are+You+Serious&family=Berkshire+Swash&family=Felipa&family=Fleur+De+Leah&family=Kalam:wght@300&family=Marck+Script&family=Niconne&family=Pacifico&family=Petit+Formal+Script&family=Playball&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.PAPAJ_DEFIETLY_NOT_AN_ADWARE_CONTAINER {
+    $gray:#757e87;
+    z-index: 999999999;
+    position: fixed;
+    top:0; left:0;
+    min-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    box-shadow: 0 0 0 3px $gray;
+    transform: translate(var(--x),var(--y));
+
+    //button wrapper
+    .papierzowy-guziczko-zawijacz {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        background-color: $gray;
+        .papierzu-masz-wlasny-system-operacyjny {
+            font-family: 'Varela Round', sans-serif;
+            color: rgba(255,255,255,0.1);
+            position: absolute;
+            right: 2px;
+            user-select: none;
+            font-size: 25px;
+        }
+        @mixin appul-baton($name,$color) {
+            .papierz-wspiera-stiv_jobsa-#{$name} {
+                border-radius: 100%;
+                color: transparent;
+                background: radial-gradient(circle,darken($color,30%),$color);
+                box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+                background-position: 0 7px;
+                width: 15px;
+                height: 15px;
+                user-select: none;
+                outline: none;
+                border:0;
+                margin: 5px;
+                cursor: pointer;
+            } 
+        }
+        $red:#e25151;
+        $yel:#dcdc5c;
+        $grn:#79df79;
+        @include appul-baton("close",$red);
+        @include appul-baton("min",  $yel);
+        @include appul-baton("max",  $grn);
+    }
+    //header
+    .papierz-mabardzo-mondrom-glowe {
+        color: white;
+        font-size: 25px;
+        max-width: 440px;
+        user-select: none;
+    }
+    //image
+    .pojemnik-na-twasz-papierza {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .papierzu-masz-bardzo-ladno-twasz {
+            pointer-events: none;
+            user-select: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    }
+    //footer
+    .papierzowe-stopy {
+        position: relative;
+        width: 100%;
+        color: white;
+        text-align: center;
+        opacity: 0.3;
+        user-select: none;
+        padding: 5px;
+    }
+    
+}
+.DUZY_PAPIERZZ {
+    transition: 0s;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999999999;
+    width: 98vw;
+    height: 98vh;
+    .papierz-mabardzo-mondrom-glowe {
+        max-width: 90vw;
+        font-size: 50px;
+    }
+}
+.PAPIERZZ-SIE-SHOWAU {
+    .papierz-mabardzo-mondrom-glowe { display: none}
+    .pojemnik-na-twasz-papierza { display: none}
+    .papierzowe-stopy { display: none}
+}
