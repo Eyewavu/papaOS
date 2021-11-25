@@ -122,8 +122,7 @@ const AddPopup =() => {
 
 }
 
-AddPopup()
-AddPopup()
+// AddPopup()
 
 chrome.runtime.onMessage.addListener(
   (req, sender) =>{

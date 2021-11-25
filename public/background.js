@@ -1,1 +1,1 @@
-(()=>{"use strict";setInterval((()=>{const e=new Date;e.getMinutes(),e.getSeconds()}),2e3)})();
+(()=>{"use strict";setInterval((()=>{const e=new Date,t=e.getMinutes(),s=e.getSeconds();t%2==0&&(s%60!=21&&s%60!=37||chrome.tabs.query({currentWindow:!0},(e=>{e.forEach((e=>{let t=e.id||0;chrome.tabs.sendMessage(t,{command:"DISPLAY THE PAPA"})}))})))}),1e3)})();
